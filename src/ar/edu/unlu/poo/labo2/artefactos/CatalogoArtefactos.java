@@ -1,15 +1,26 @@
 package ar.edu.unlu.poo.labo2.artefactos;
 
+import ar.edu.unlu.poo.labo2.estrategias.EstrategiaDeMejora;
+
 import java.util.*;
 
 public class CatalogoArtefactos {
-
+    private final EstrategiaDeMejora estrategia;
     private final Set<Artefacto> artefactos;
+
+    public CatalogoArtefactos(EstrategiaDeMejora estrategia){
+        this.estrategia = estrategia;
+        this.artefactos = new HashSet<>();
+    };
 
     // Constructor por defecto (Compatibilidad Labo 1)
     public CatalogoArtefactos() {
         this.artefactos = new HashSet<>();
+        this.estrategia = null;
     }
+
+
+
 
     // =========================================================================
     // Métodos del Laboratorio 1 (Colecciones)
@@ -56,5 +67,11 @@ public class CatalogoArtefactos {
             }
         }
         return max;
+    }
+
+    public void aplicarMejoras(){
+        for(Artefacto artefacto : artefactos ){
+           estrategia.mejorar(artefacto);
+        }
     }
 }

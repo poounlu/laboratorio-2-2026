@@ -11,8 +11,9 @@
 
 # Integrantes del Grupo
 
-- Estudiante 1 (Legajo 1)
-- Estudiante 2 (Legajo 2)
+- Estudiante 1 Santino (Legajo 94)
+- Estudiante 2 Mateo (Legajo 67)
+- Estudiante 3 Eros (Legajo 89)
 
 ---
 

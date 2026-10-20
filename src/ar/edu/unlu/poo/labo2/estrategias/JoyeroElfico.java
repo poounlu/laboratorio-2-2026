@@ -1,6 +1,6 @@
-package ar.edu.unlu.poo.labo2.artefactos;
+package ar.edu.unlu.poo.labo2.estrategias;
 
-import ar.edu.unlu.poo.labo2.estrategias.EstrategiaDeMejora;
+import ar.edu.unlu.poo.labo2.artefactos.Artefacto;
 
 public class JoyeroElfico implements EstrategiaDeMejora {
     @Override

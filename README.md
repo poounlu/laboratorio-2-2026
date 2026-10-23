@@ -11,8 +11,9 @@
 
 # Integrantes del Grupo
 
-- Estudiante 1 (Legajo 1)
-- Estudiante 2 (Legajo 2)
+- Ciro D - 49
+- Ignacio J - 47
+- Luna L - 95
 
 ---
 
@@ -55,12 +56,12 @@ te valeras de la antigua sabiduria conocida como **Principio de Inversión de De
 2. **Refactorizar el Cliente (`CatalogoArtefactos`):**
     * Incorporar un constructor que reciba e inyecte una `EstrategiaDeMejora`:
       ```java
-      public CatalogoArtefactos(EstrategiaDeMejora estrategia)
+      public CatalogoArtefactos(EstrategiaDeMejora estrategia);
       ```
     * Mantener el constructor por defecto `public CatalogoArtefactos()` para preservar la compatibilidad con el Laboratorio 1.
     * Implementar el método de negocio:
       ```java
-      public void aplicarMejoras()
+      public void aplicarMejoras();
       ```
       Debe recorrer todos los artefactos del catálogo y delegar la mejora en la estrategia inyectada.
 
@@ -76,7 +77,7 @@ te valeras de la antigua sabiduria conocida como **Principio de Inversión de De
     * Para las pruebas finales del torneo, un artefacto debe ser mejorado por múltiples artesanos secuencialmente en una sola pasada.
     * Implementar la clase `EstrategiaCompuesta` (patrón estructural *Composite*) que implemente `EstrategiaDeMejora` y reciba en su constructor una lista o varargs de estrategias:
       ```java
-      public EstrategiaCompuesta(EstrategiaDeMejora... estrategias)
+      public EstrategiaCompuesta(EstrategiaDeMejora... estrategias);
       ```
       (tip: googlear `varargs java` y ver usos)
     * Al llamar a `mejorar(artefacto)`, debe aplicar cada estrategia contenida sobre el artefacto.
